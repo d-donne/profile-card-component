@@ -1,0 +1,107 @@
+:root {
+  /* Colors */
+  --darkCyan: hsl(185, 75%, 39%);
+  --veryDarkDesaturatedBlue: hsl(229, 23%, 23%);
+  --darkGrayishBlue: hsl(227, 10%, 46%);
+
+  /* neutral */
+  --darkGray: hsl(0, 0%, 59%);
+
+  --card-background: hsl(0, 0%, 100%);
+  /* font */
+  --font-primary: "Kumbh Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-primary);
+  background-color: var(--darkCyan);
+  background-image: url("/images/bg-pattern-top.svg"),
+    url("/images/bg-pattern-bottom.svg");
+  background-position: top -10vh left -9vw, bottom -20vh right -25vw;
+  background-size: 65vw 44vh, 65vw 64vh;
+  background-repeat: no-repeat;
+  height: 100svh;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1, h2 {
+    color: var(--veryDarkDesaturatedBlue);
+    font-size: 18px;
+    font-weight: 700;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 23.75rem;
+  width: 20.5rem;
+  background-color: var(--card-background);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card-banner {
+  background-image: url("/images/bg-pattern-card.svg");
+  height: 8.75rem;
+}
+
+/* -USER PROFILE- */
+.card-body .profile {
+  height: 9.3125rem;
+  display: grid;
+  place-items: center;
+}
+.card-body .profile img {
+  margin-top: -65px;
+  border: 0.5rem solid var(--card-background);
+  border-radius: 50%;
+}
+
+.card-body .profile h1 {
+    margin-top: -1rem;
+}
+
+h1 span {
+    font-weight: lighter;
+    margin-left: 5px;
+}
+.card-body .profile p {
+    margin-top: -2rem;
+}
+
+.line {
+  height: 0.04rem;
+  background-color: hsl(0, 6%, 91%);
+}
+/* USER DETAILS SECTION- followers, likes, photos */
+.user-detail {
+  height: 5.375rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  padding: 1rem;
+}
+
+.user-detail div {
+    text-align: center;
+}
+
+/* FOOTER */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* auxillary classes */
+.text-gray {
+    color: var(--darkGray);
+}
