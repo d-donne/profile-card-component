@@ -20,8 +20,8 @@
 body {
   font-family: var(--font-primary);
   background-color: var(--darkCyan);
-  background-image: url("/images/bg-pattern-top.svg"),
-    url("/images/bg-pattern-bottom.svg");
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
   background-position: top -10vh left -9vw, bottom -20vh right -25vw;
   background-size: 65vw 44vh, 65vw 64vh;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@ h1, h2 {
 }
 
 .card-banner {
-  background-image: url("/images/bg-pattern-card.svg");
+  background-image: url("../images/bg-pattern-card.svg");
   height: 8.75rem;
 }
 
