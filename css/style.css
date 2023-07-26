@@ -17,25 +17,35 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: var(--font-primary);
   background-color: var(--darkCyan);
   background-image: url("../images/bg-pattern-top.svg"),
     url("../images/bg-pattern-bottom.svg");
-  background-position: top -10vh left -9vw, bottom -20vh right -25vw;
-  background-size: 65vw 44vh, 65vw 64vh;
+  background-size: 109vw 142vh, 54vw 90vh;
+  background-position: top -67vh left -60vw, bottom -45vh right -13vh;
   background-repeat: no-repeat;
-  height: 100svh;
   height: 100vh;
   display: grid;
   place-items: center;
 }
 
-h1, h2 {
-    color: var(--veryDarkDesaturatedBlue);
-    font-size: 18px;
-    font-weight: 700;
+@media (max-width: 620px) {
+  body {
+     background-size: 65vw 61vh, 107vw 96vh;
+  background-position: top -41vw left -14vh, bottom -52vh right -54vw;
 }
+  }
+}
+
+h1,
+h2 {
+  color: var(--veryDarkDesaturatedBlue);
+  font-size: 18px;
+  font-weight: 700;
+}
+
 .card {
   display: flex;
   flex-direction: column;
@@ -57,6 +67,7 @@ h1, h2 {
   display: grid;
   place-items: center;
 }
+
 .card-body .profile img {
   margin-top: -65px;
   border: 0.5rem solid var(--card-background);
@@ -64,21 +75,25 @@ h1, h2 {
 }
 
 .card-body .profile h1 {
-    margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 h1 span {
-    font-weight: lighter;
-    margin-left: 5px;
+  color: var(--darkGray);
+  font-weight: 400;
+  margin-left: 5px;
 }
+
 .card-body .profile p {
-    margin-top: -2rem;
+  font-size: 0.8rem;
+  margin-top: -2.5rem;
 }
 
 .line {
-  height: 0.04rem;
+  height: 1px;
   background-color: hsl(0, 6%, 91%);
 }
+
 /* USER DETAILS SECTION- followers, likes, photos */
 .user-detail {
   height: 5.375rem;
@@ -89,7 +104,7 @@ h1 span {
 }
 
 .user-detail div {
-    text-align: center;
+  text-align: center;
 }
 
 /* FOOTER */
@@ -97,11 +112,14 @@ h1 span {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
 /* auxillary classes */
 .text-gray {
-    color: var(--darkGray);
+  color: var(--darkGray);
+  font-size: 0.7rem;
+  letter-spacing: 0.08ch;
 }
