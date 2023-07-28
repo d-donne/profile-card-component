@@ -52,4 +52,4 @@ How to use multiple images along side a background image and correctly adjust th
 
 - Frontend Mentor - [Dieu - Donne](https://www.frontendmentor.io/profile/d-donne)
 
-- Twitter - [@d_donne7](https://www.twitter.com/yourusername)
+- Twitter - [@d_donne7](https://www.twitter.com/d_donne7)
