@@ -15,7 +15,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 
 ## Overview
-
+I decided to use CSS for the background-image for the SVGs in the background - that was a bit more challenging 
 ### The challenge
 
 - Build out the project to the designs provided
