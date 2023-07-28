@@ -33,16 +33,15 @@ body {
 
 @media (max-width: 620px) {
   body {
-     background-size: 65vw 61vh, 107vw 96vh;
-  background-position: top -41vw left -14vh, bottom -52vh right -54vw;
-}
+    background-size: 65vw 61vh, 107vw 96vh;
+    background-position: top -41vw left -14vh, bottom -52vh right -54vw;
   }
 }
 
 h1,
 h2 {
   color: var(--veryDarkDesaturatedBlue);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
 }
 
@@ -109,12 +108,15 @@ h1 span {
 
 /* FOOTER */
 .attribution {
+  color: #ffffff;
+  position: absolute;
+  bottom: 1rem;
   font-size: 11px;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: hsl(226, 99%, 50%);
 }
 
 /* auxillary classes */
